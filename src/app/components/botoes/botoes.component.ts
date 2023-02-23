@@ -18,7 +18,6 @@ export class BotoesComponent implements OnInit {
     this.eventEmitterService.myEventEmitter.subscribe((data) => {
       this.btnFlag = data;
 
-      console.log(this.btnFlag)
     });
   }
 
