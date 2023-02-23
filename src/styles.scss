@@ -141,7 +141,6 @@ header{
 
 main{
   margin-top: 90px;
-  padding: 2rem 1.5rem;
   background-color: var(--ailos-background);
   min-height: calc(90vh - 90px);
 }
@@ -172,6 +171,16 @@ main{
   height: 2rem;
   padding: 0 1rem;
   border: 1px solid var(--ailos-azul);
+  border-radius: 2px;
+}
+
+.desativado{
+  opacity: 0.6;
+  background-color: var(--ailos-azul);
+  color: #fff;
+  height: 2rem;
+  padding: 0 1rem;
+  border: none;
   border-radius: 2px;
 }
 

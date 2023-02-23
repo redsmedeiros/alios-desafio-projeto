@@ -1,6 +1,8 @@
+import { EventService } from './../../event.service';
 
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -12,31 +14,58 @@ export class CpfComponent implements OnInit {
 
   formCPF: FormGroup
   habilitaErro: boolean = false
+  btnFlag: boolean = false
 
-  constructor(private formBuilder: FormBuilder){
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private eventEmitterService: EventService
+
+  ){
 
     this.formCPF = this.formBuilder.group({
       cpf: ['', Validators.compose([Validators.required])]
     })
+
+    this.activatedRoute.params.subscribe((params)=>{
+
+      if(params['cpf']){
+
+        this.btnFlag = true
+
+      }
+    })
   }
 
-  ngOnInit(): void {
-
-
-  }
+  ngOnInit(): void {}
 
   submit(campo:any): void {
 
     let validacao = this.cpfValido(campo)
 
-    this.habilitaErro = validacao !== null ? true : false
+    if(validacao !== null){
+
+      this.habilitaErro = true
+
+    }else{
+
+      const cpf = this.formCPF.get('cpf')?.value
+
+      this.router.navigateByUrl('/admissao/' + cpf)
+
+      this.emitEvent()
+    }
+
+
 
   }
 
 
   cpfValido = (campo: any): any => {
     let cpf = campo.value
-    // Pega o valor que vem do controlador String(cpf).replace(/\D/g, '');
+
     const cpfString = cpf.cpf
     // Para verificar o digito do cpf
     let rev = 0;
@@ -98,6 +127,10 @@ export class CpfComponent implements OnInit {
     // Se tudo der certo e passou nas verificações returna null, ou seja, não possui erros nesse controlador
     return null;
   };
+
+  emitEvent() {
+    this.eventEmitterService.myEventEmitter.emit(false);
+  }
 }
 
 

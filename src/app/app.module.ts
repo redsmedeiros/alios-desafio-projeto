@@ -14,6 +14,9 @@ import { MatInputModule } from '@angular/material/input';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardsComponent } from './components/cards/cards.component';
 import { DigitoPipe } from './pipes/digito.pipe';
+import { HomeComponent } from './pages/home/home.component';
+import { CpfValidoComponent } from './pages/cpf-valido/cpf-valido.component';
+import { BotoesComponent } from './components/botoes/botoes.component';
 
 
 
@@ -23,7 +26,10 @@ import { DigitoPipe } from './pipes/digito.pipe';
     CpfComponent,
     PassoAPassoComponent,
     CardsComponent,
-    DigitoPipe
+    DigitoPipe,
+    HomeComponent,
+    CpfValidoComponent,
+    BotoesComponent
   ],
   imports: [
     BrowserModule,

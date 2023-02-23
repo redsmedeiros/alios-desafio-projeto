@@ -14,7 +14,7 @@
           <span>Coloque um CPF válido!</span>
         </div>
       </div>
-      <button class="primario" (click)="submit(formCPF)" [disabled]="!formCPF.valid">Consultar por CPF</button>
+      <button class=" {{ btnFlag ? 'desativado' : 'primario'}}" (click)="submit(formCPF)" >Consultar por CPF</button>
     </div>
 
 

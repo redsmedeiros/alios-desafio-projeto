@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 
 
@@ -10,5 +11,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'alios';
   imagemProfile: string = "/assets/profile.jpg"
+  btnFlag: boolean = false
+
 
 }
