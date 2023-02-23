@@ -1,0 +1,70 @@
+<section>
+  <div class="card">
+    <div class="card-header">
+      <h3>Situação cadastral do CPF</h3>
+      <p>Consulta na Receita Federal</p>
+    </div>
+
+    <div class="card-body">
+      <div class="card-body-contend">
+        <fa-icon [icon]="faUser" class="fauser"></fa-icon>
+        <div class="card-body-data">
+          <p>Nome</p>
+          <h4>{{cards.nome}}</h4>
+        </div>
+      </div>
+
+      <div class="card-body-contend">
+        <fa-icon [icon]="faCheckCircle" class="check"></fa-icon>
+        <div  class="card-body-data">
+          <p>Situação do CPF</p>
+          <h4>{{cards.situacaoCPF}}</h4>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h3>Conta aplicação</h3>
+    <p>Cooperativa Viacredi</p>
+  </div>
+
+  <div class="card-body">
+    <div class="card-body-contend">
+      <fa-icon [icon]="faCreditCard" class="fauser"></fa-icon>
+      <div class="card-body-data">
+        <p>Número da conta</p>
+        <h4>{{ cards.contaAplicacao | digito }}</h4>
+      </div>
+    </div>
+
+    <div class="card-body-contend">
+        <h4 style="color: #007d8a; font-weight: 500;">Duplicar conta</h4>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h3>Conta corrente</h3>
+    <p>Cooperativa Viacredi</p>
+  </div>
+
+  <div class="card-body">
+    <div class="card-body-contend">
+      <fa-icon [icon]="faCreditCard" class="fauser"></fa-icon>
+      <div class="card-body-data">
+        <p>Número da conta</p>
+        <h4>{{ cards.contaCorrente | digito }}</h4>
+      </div>
+    </div>
+
+    <div class="card-body-contend">
+      <div class="card-body-contend">
+        <h4 style="color: #007d8a; font-weight: 500;">Duplicar conta</h4>
+    </div>
+    </div>
+  </div>
+</div>
+</section>

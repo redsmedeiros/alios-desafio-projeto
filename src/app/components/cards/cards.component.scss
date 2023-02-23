@@ -1,0 +1,70 @@
+section{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding: 1rem
+}
+
+.card{
+  background-color: #fff;
+  padding: 1.2rem;
+  margin-right: 1rem;
+  width: 25%;
+  border: 1px solid var(--ailos-greyText);
+  height: 190px;
+  border-radius: 2px;
+}
+
+.card-header{
+  height: 30%;
+}
+
+.card-header h3{
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.card-header p{
+  margin-top: -0.4rem;
+  font-size: 0.6rem;
+  color: var(--ailos-greyText);
+}
+
+.card-body{
+  padding: 1rem;
+}
+
+.card-body-contend{
+  display: flex;
+  flex-direction: row;
+}
+
+.fauser{
+  color: gray;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.card-body-data{
+  margin-left: 0.4rem;
+}
+
+.card-body-data p{
+  color: var(--ailos-greyText);
+  font-size: 0.6rem;
+  margin-bottom: 0;
+}
+
+.card-body-data h4{
+  margin-top: -0.4rem;
+  font-weight: 500;
+}
+
+.check{
+  color: green;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+

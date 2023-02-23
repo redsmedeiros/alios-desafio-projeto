@@ -1,0 +1,33 @@
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mat-step-icon {
+  display: none !important;
+}
+
+.stepper{
+  width: 600px;
+
+}
+
+.mat-stepper-horizontal {
+  margin-top: 8px;
+}
+
+.mat-mdc-form-field {
+  margin-top: 16px;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+  background-color: #165c7d;
+}
+
+::ng-deep .mat-step-icon{
+  background-color: #165c7d;
+}
+
+

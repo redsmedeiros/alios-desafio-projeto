@@ -1,0 +1,18 @@
+
+<section>
+  <mat-stepper labelPosition="bottom" [linear]="isLinear" #stepper style="background-color: #e8eff2; height: 90px;">
+    <mat-step>
+      <ng-template matStepLabel>Início</ng-template>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Documentos">
+      <ng-template matStepLabel>Documentos</ng-template>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Dados Cadastrais</ng-template>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Admissão</ng-template>
+    </mat-step>
+  </mat-stepper>
+</section>
+

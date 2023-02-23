@@ -1,0 +1,49 @@
+section div:first-child{
+  padding: 1rem;
+}
+
+section div:first-child h2{
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+section div:first-child p{
+  font-size: 0.7rem;
+  padding: 0;
+  margin: 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  width: 45%;
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+  width: 70%;
+}
+
+form input{
+  height: 34px;
+  margin-right: 0.2rem;
+  border-radius: 2px;
+  padding: 9px 9px 8px 12px;
+
+}
+
+.validar-cpf{
+  display: flex;
+  flex-direction: column;
+}
+
+form button{
+  width: 35%;
+}
+
+form label{
+  font-weight: 600;
+}

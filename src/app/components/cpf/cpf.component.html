@@ -1,0 +1,24 @@
+<section>
+  <div>
+    <h2>Informe o CPF do futuro cooperado (a)</h2>
+    <p>Se necessário você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.</p>
+    <p>Digite apenas os números sem ponto ou traço.</p>
+  </div>
+
+  <form [formGroup]="formCPF">
+    <label>CPF</label>
+    <div>
+      <div class="validar-cpf">
+        <input type="text" placeholder="000.000.000-00" mask="000.000.000-00" formControlName="cpf"/>
+        <div *ngIf="habilitaErro" class="has-error">
+          <span>Coloque um CPF válido!</span>
+        </div>
+      </div>
+      <button class="primario" (click)="submit(formCPF)" [disabled]="!formCPF.valid">Consultar por CPF</button>
+    </div>
+
+
+  </form>
+
+</section>
+
