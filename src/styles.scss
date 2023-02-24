@@ -135,6 +135,22 @@ header{
   align-items: center;
 }
 
+.cog{
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--ailos-aInter);
+  color: var(--ailos-aInter);
+  font-size: 10px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 50px;
+  right: 33px;
+  transform: translateY(3px);
+  align-items: center;
+}
+
 .user-wrapper img{
   border-radius: 50%;
   border: 2px solid var(--ailos-aInter);

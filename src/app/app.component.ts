@@ -1,5 +1,6 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { faCircle } from '@fortawesome/free-regular-svg-icons'
 
 
 
@@ -12,6 +13,7 @@ export class AppComponent {
   title = 'alios';
   imagemProfile: string = "/assets/profile.jpg"
   btnFlag: boolean = false
+  faCircle = faCircle
 
 
 }
