@@ -70,7 +70,7 @@
 header{
   display: flex;
   justify-content: space-between;
-  padding: 0rem 1rem;
+  padding: 0.5rem 1rem;
   position: fixed;
   left: 105px;
   width: calc(100% - 105px);
@@ -88,7 +88,8 @@ header{
 }
 
 .header-title p{
-  padding: 0.3rem 0;
+  margin-top: -8px;
+  padding: 0rem 0;
   color: #a7b0b5;
 }
 
@@ -142,7 +143,7 @@ header{
 main{
   margin-top: 90px;
   background-color: var(--ailos-background);
-  min-height: calc(90vh - 90px);
+  min-height: calc(89vh - 90px);
 }
 
 .main-content footer{
@@ -168,7 +169,7 @@ main{
 .secundario{
   background-color: #fff;
   color: var(--ailos-azul);
-  height: 2rem;
+  height: 3rem;
   padding: 0 1rem;
   border: 1px solid var(--ailos-azul);
   border-radius: 2px;
